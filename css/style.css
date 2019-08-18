@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* CORE STYLE FOR WEBSITE---------start */
+
+*{
+    /* protects the continer size from being affected by padding */
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+a{
+    /* Remove underline from links */
+    text-decoration: none;
+    color: white;
+}
+
+p{
+    margin:0.75rem 0;
+}
+
+
+/* CORE STYLE FOR WEBSITE-------end */
+
+
+
+/* UTILITY CLASSES-------start */
+
+
+
+
+.text-primary{
+
+    color: #93cb52;
+}
+
+
+.l-heading{
+
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+}
+
+.m-heading{
+
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+
+
+}
+
+.text-dark{
+    color: black;
+}
+
+.lead{
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn{
+
+    display: inline-block;
+    color:white;
+    background: #93cb52;
+    padding: 0.5rem;
+    border:none;
+    border-radius: 5px;
+}
+
+.btn:hover{
+
+    background: #9edb58;
+
+
+}
+
+.btn-dark{
+
+    background: #333;
+    color: white;
+    border-radius: 5px;
+   
+   
+}
+
+
+.bg-light{
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark{
+    background: #333;
+    color: white;
+
+}
+
+.bg-primary{
+
+    background: #93cb52;
+    color: white;
+}
+
+.py-1{
+
+    padding: 1.5rem 0;
+
+}
+.py-2{
+
+    padding: 2rem 0;
+
+}
+.py-3{
+
+    padding: 3rem 0;
+
+}
+
+.container{
+
+    max-width:1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow:hidden;
+ 
+
+   
+
+}
+
+.text-center{
+
+    text-align:center;
+}
+
+.list{
+    list-style: none;
+
+}
+.list li{
+    border-bottom: white dotted 1px;
+
+}
+
+.p-1{
+
+    padding: 1.5rem;
+}
+.p-2{
+
+    padding: 2rem;
+}
+.p-2{
+
+    padding: 3rem;
+}
+
+
+
+/* UTILITY CLASSES-------end */
+
+
+
+/* NAV-BAR */
+#nav-bar{
+    /* --------------position sticky and top 0 allows the bar to stick to the top------------------------------ */
+    position: sticky;
+    top: 0;                 
+    background-color: #333;
+    color:white;
+    display: flex; 
+    justify-content: space-between;
+    /* z index 1 puts the nav bar in front of everything */
+    z-index: 1;
+    padding: 1rem;
+}
+
+
+
+/* ul */
+
+#nav-bar ul{
+
+    display:flex;
+    list-style:none;
+    align-items: center;
+  
+}
+
+/* nav bar links add padding */
+#nav-bar ul li a{
+
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+  
+}
+
+/* Nav Bar links hover state */
+
+#nav-bar ul li a:hover{
+
+    background-color: #93cb52;
+    border-radius:5px;
+}
+
+
+/* Showcase */
+
+
+#showcase{
+
+    /* Add background Image */
+
+    background: #333 url(../img/software.jpeg) no-repeat center center/cover;
+    height: 100vh;
+    color:white;
+}
+
+
+/* Showcase-content */
+
+#showcase .showcase-content{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    padding: 0 1rem;
+
+    /* This means height is 100% of its container */
+    height: 100%;
+
+
+    /* Overlay */
+    position: absolute;
+    top: 65px;
+    left :0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.4);
+   
+}
+
+/* What we do */
+.items{
+
+    display: flex;
+    padding: 1rem;
+
+
+}
+
+.item{
+
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+
+
+}
+
+
+#what .items .item i{
+
+    background:#93cb52;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#what{
+
+    /* border: solid gold 2px; */
+}
+
+
+/* who are we */
+
+#who{
+
+    display: flex;
+    line-height: 2;
+
+}
+
+#who div{
+
+    flex:1;
+
+}
+
+#who .who-img{
+
+    background: url('../img/workers.jpeg') no-repeat center center/cover;
+}
+
+/* section: clients */
+
+#clients .items{
+
+    display: flex;
+    background-color:#93cb52;
+    border-radius: 15%;
+}
+
+#clients .items img{
+
+    /* margin block to put a width to the items */
+    display: block;
+    /* margin auto to put in the center */
+    margin: auto;
+
+    width: 100%;
+
+}
+
+/* Section: contaacts */
+
+#contact{
+    display: flex;
+}
+
+#contact .map{
+    flex: 1;
+    /* background:coral; */
+}
+#contact .contact-form{
+    flex: 1;
+    padding:1rem;
+}
+
+#contact .contact-form .form-group{
+
+    margin: 0.75rem;
+}
+
+#contact .contact-form label{
+
+    display:block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea{
+
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#main-footer{
+
+    background: #333;
+    text-align:center;
+    color:white;
+    padding:0.5rem;
+    
+}

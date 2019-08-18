@@ -1,0 +1,55 @@
+/* Aling icon to left */
+#what .items .item{
+
+    display: flex;
+    text-align:left;
+}
+
+#what .items .item i{
+
+    margin-right: 1.3rem;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+#what .items{
+
+    display: block;
+}
+
+/* Smartphones */
+
+@media(max-width: 500px){
+
+    #nav-bar{
+        flex-direction: column;
+        align-items: center;
+       
+    
+    }
+    #nav-bar .logo{
+       text-align: center;
+       margin-bottom: 1rem;
+    }
+
+    #showcase .showcase-content{
+
+        top: 103px;
+        margin-top: -2rem;
+
+    }
+
+    #who{
+        display: block;
+    }
+
+    #contact{
+
+        display: block;
+    }
+
+    #contact .map{
+        height: 200px;
+        border-top: black 2px solid;
+    }
+}
